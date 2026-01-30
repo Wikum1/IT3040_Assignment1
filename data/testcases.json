@@ -1,0 +1,506 @@
+[
+  {
+    "id": "Pos_Fun_0001",
+    "name": "Convert short daily statement about breakfast",
+    "len_type": "S",
+    "input": "mata kaema oonee.",
+    "expected": "මට කෑම ඕනේ.",
+    "coverage": [
+      "Daily language usage",
+      "Simple sentence",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ],
+    "notes": "Meaning and punctuation preserved."
+  },
+  {
+    "id": "Pos_Fun_0002",
+    "name": "Convert short present tense work statement",
+    "len_type": "S",
+    "input": "mama dan weda karanawa.",
+    "expected": "මම දැන් වැඩ කරනවා.",
+    "coverage": [
+      "Daily language usage",
+      "Present tense",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ],
+    "notes": "Present tense preserved."
+  },
+  {
+    "id": "Pos_Fun_0003",
+    "name": "Convert polite question request",
+    "len_type": "M",
+    "input": "karunaakara mata podi udavvak karanna puluvanda?",
+    "expected": "කරුණාකර මට පොඩි උදව්වක් කරන්න පුළුවන්ද?",
+    "coverage": [
+      "Greeting / request / response",
+      "Interrogative (question)",
+      "M (31–299 characters)",
+      "Accuracy validation"
+    ],
+    "notes": "Polite form and question mark preserved."
+  },
+  {
+    "id": "Pos_Fun_0004",
+    "name": "Convert imperative command",
+    "len_type": "S",
+    "input": "meeka danna.",
+    "expected": "මේක දන්න.",
+    "coverage": [
+      "Daily language usage",
+      "Imperative (command)",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ],
+    "notes": "Command form preserved."
+  },
+  {
+    "id": "Pos_Fun_0005",
+    "name": "Convert compound sentence with 'but'",
+    "len_type": "M",
+    "input": "mama yanna haduwa, namuth adha vaessa nisaa yanne na.",
+    "expected": "මම යන්න හදුවා, නමුත් අද වැස්ස නිසා යන්නේ නෑ.",
+    "coverage": [
+      "Daily language usage",
+      "Compound sentence",
+      "M (31–299 characters)",
+      "Accuracy validation"
+    ],
+    "notes": "Compound structure and negation preserved."
+  },
+  {
+    "id": "Pos_Fun_0006",
+    "name": "Convert complex conditional sentence",
+    "len_type": "M",
+    "input": "oyaa enawanan api passe kathaa karamu.",
+    "expected": "ඔයා එනවනම් අපි පස්සේ කතා කරමු.",
+    "coverage": [
+      "Daily language usage",
+      "Complex sentence",
+      "M (31–299 characters)",
+      "Accuracy validation"
+    ],
+    "notes": "Conditional meaning preserved."
+  },
+  {
+    "id": "Pos_Fun_0007",
+    "name": "Convert negative form about knowing",
+    "len_type": "S",
+    "input": "mama dannee na.",
+    "expected": "මම දන්නේ නෑ.",
+    "coverage": [
+      "Daily language usage",
+      "Negation (negative form)",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ],
+    "notes": "Negation preserved."
+  },
+  {
+    "id": "Pos_Fun_0008",
+    "name": "Convert plural pronoun variation",
+    "len_type": "S",
+    "input": "api hodata igena gannawa.",
+    "expected": "අපි හොඳට ඉගෙන ගන්නවා.",
+    "coverage": [
+      "Daily language usage",
+      "Pronoun variation (I/you/we/they)",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ],
+    "notes": "Plural pronoun and adverb preserved."
+  },
+  {
+    "id": "Pos_Fun_0009",
+    "name": "Convert question about time",
+    "len_type": "S",
+    "input": "oyaa kawadda enna inne?",
+    "expected": "ඔයා කවද්ද එන්න ඉන්නේ?",
+    "coverage": [
+      "Daily language usage",
+      "Interrogative (question)",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ],
+    "notes": "Question form preserved."
+  },
+  {
+    "id": "Pos_Fun_0010",
+    "name": "Convert greeting phrase (new)",
+    "len_type": "S",
+    "input": "suba dawasak!",
+    "expected": "සුබ දවසක්!",
+    "coverage": [
+      "Greeting / request / response",
+      "Simple sentence",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ],
+    "notes": "Greeting and exclamation preserved."
+  },
+  {
+    "id": "Pos_Fun_0011",
+    "name": "Convert repeated emphasis phrase",
+    "len_type": "S",
+    "input": "hari hari, eeka thamai.",
+    "expected": "හරි හරි, ඒක තමයි.",
+    "coverage": [
+      "Word combination / phrase pattern",
+      "Simple sentence",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ],
+    "notes": "Repeated emphasis preserved."
+  },
+  {
+    "id": "Pos_Fun_0012",
+    "name": "Convert joined vs segmented (segmented)",
+    "len_type": "S",
+    "input": "mama gedhara innee.",
+    "expected": "මම ගෙදර ඉන්නේ.",
+    "coverage": [
+      "Word combination / phrase pattern",
+      "Simple sentence",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ],
+    "notes": "Proper word segmentation."
+  },
+  {
+    "id": "Pos_Fun_0013",
+    "name": "Convert future plan sentence",
+    "len_type": "M",
+    "input": "api next week library yamu, passe tea ekak bonna puluwan.",
+    "expected": "අපි next week library යමු, පස්සේ tea එකක් බොන්න පුළුවන්.",
+    "coverage": [
+      "Mixed Singlish + English",
+      "Future tense",
+      "M (31–299 characters)",
+      "Robustness validation"
+    ],
+    "notes": "English terms should remain readable."
+  },
+  {
+    "id": "Pos_Fun_0014",
+    "name": "Convert embedded technical terms",
+    "len_type": "M",
+    "input": "mama WiFi connect karala Teams meeting eka join karanawa.",
+    "expected": "මම WiFi connect කරලා Teams meeting එක join කරනවා.",
+    "coverage": [
+      "Mixed Singlish + English",
+      "Present tense",
+      "M (31–299 characters)",
+      "Robustness validation"
+    ],
+    "notes": "Brand/technical words preserved."
+  },
+  {
+    "id": "Pos_Fun_0015",
+    "name": "Convert places and common English words",
+    "len_type": "M",
+    "input": "api Colombo yanna bus eken, namuth traffic nisaa late wei.",
+    "expected": "අපි Colombo යන්න bus එකෙන්, නමුත් traffic නිසා late වෙයි.",
+    "coverage": [
+      "Names / places / common English words",
+      "Compound sentence",
+      "M (31–299 characters)",
+      "Robustness validation"
+    ],
+    "notes": "Place and English words should remain as-is."
+  },
+  {
+    "id": "Pos_Fun_0016",
+    "name": "Convert abbreviations",
+    "len_type": "M",
+    "input": "oyaa OTP eka kiyanna. mage ID card eka bag eke thiyenawa.",
+    "expected": "ඔයා OTP එක කියන්න. මගේ ID card එක bag එකේ තියෙනවා.",
+    "coverage": [
+      "Punctuation / numbers",
+      "Imperative (command)",
+      "M (31–299 characters)",
+      "Robustness validation"
+    ],
+    "notes": "Abbreviations remain, Sinhala around them correct."
+  },
+  {
+    "id": "Pos_Fun_0017",
+    "name": "Convert punctuation stress input",
+    "len_type": "M",
+    "input": "ehema karanna epa! meeka hariyata balanna, ok?",
+    "expected": "එහෙම කරන්න එපා! මේක හරියට බලන්න, ok?",
+    "coverage": [
+      "Punctuation / numbers",
+      "Imperative (command)",
+      "M (31–299 characters)",
+      "Robustness validation"
+    ],
+    "notes": "Punctuation preserved."
+  },
+  {
+    "id": "Pos_Fun_0018",
+    "name": "Convert currency + date + time formats",
+    "len_type": "M",
+    "input": "mata Rs. 2500 denna. 2026-01-31 7.30 AM before enna.",
+    "expected": "මට Rs. 2500 දෙන්න. 2026-01-31 7.30 AM before එන්න.",
+    "coverage": [
+      "Punctuation / numbers",
+      "Imperative (command)",
+      "M (31–299 characters)",
+      "Robustness validation"
+    ],
+    "notes": "Numbers/formats preserved."
+  },
+  {
+    "id": "Pos_Fun_0019",
+    "name": "Convert formatting with multiple spaces",
+    "len_type": "M",
+    "input": "mama   adha   campus   enawa.",
+    "expected": "මම   අද   campus   එනවා.",
+    "coverage": [
+      "Formatting (spaces / line breaks / paragraph)",
+      "Simple sentence",
+      "M (31–299 characters)",
+      "Formatting preservation"
+    ],
+    "notes": "Multiple spaces preserved."
+  },
+  {
+    "id": "Pos_Fun_0020",
+    "name": "Convert multiline input with line breaks",
+    "len_type": "M",
+    "input": "mama campus enawa.\noyaa enawada?",
+    "expected": "මම campus එනවා.\nඔයා එනවද?",
+    "coverage": [
+      "Formatting (spaces / line breaks / paragraph)",
+      "Interrogative (question)",
+      "M (31–299 characters)",
+      "Formatting preservation"
+    ],
+    "notes": "Line breaks preserved."
+  },
+  {
+    "id": "Pos_Fun_0021",
+    "name": "Convert slang short but clean",
+    "len_type": "M",
+    "input": "ela machan, adha lecture eka supiri!",
+    "expected": "එල මචන්, අද lecture එක සුපිරි!",
+    "coverage": [
+      "Slang / informal language",
+      "Simple sentence",
+      "M (31–299 characters)",
+      "Robustness validation"
+    ],
+    "notes": "Slang transliterated."
+  },
+  {
+    "id": "Pos_Fun_0022",
+    "name": "Convert past tense memory sentence",
+    "len_type": "M",
+    "input": "api iiye lab eke practical kala, eeta passe dinner gatta.",
+    "expected": "අපි ඉයේ lab එකේ practical කල, ඒට පස්සේ dinner ගත්ත.",
+    "coverage": [
+      "Daily language usage",
+      "Past tense",
+      "M (31–299 characters)",
+      "Accuracy validation"
+    ],
+    "notes": "Past tense preserved (best-effort)."
+  },
+  {
+    "id": "Pos_Fun_0023",
+    "name": "Convert long paragraph (>=300 chars) about study plan",
+    "len_type": "L",
+    "input": "api me sathiye module tika finish karanna plan karala inne. mama dan assignment 1 test cases hadanawa, eeta passe playwright automate karanawa. oyaalath free nam evening 6.30 passe group meeting ekak dammuwa nam hari. documents tika drive eke share karala, changes tika comment karanna.",
+    "expected": "අපි මේ සතියේ module ටික finish කරන්න plan කරලා ඉන්නේ. මම දැන් assignment 1 test cases හදනවා, ඒට පස්සේ playwright automate කරනවා. ඔයාලත් free නම් evening 6.30 පස්සේ group meeting එකක් දම්මුවා නම් හරි. documents ටික drive එකේ share කරලා, changes ටික comment කරන්න.",
+    "coverage": [
+      "Mixed Singlish + English",
+      "Compound sentence",
+      "L (≥300 characters)",
+      "Robustness validation"
+    ],
+    "notes": "Long input robustness and mixed English terms."
+  },
+  {
+    "id": "Pos_Fun_0024",
+    "name": "Convert long paragraph about travel with places",
+    "len_type": "L",
+    "input": "api February wala Kandy trip ekak yanna hithuwa. train tickets online book karanna oone, budget eka Rs. 8000 wage. oyaa enawanan, morning 5.45 AM Colombo Fort station eke meet wenna. weather eka balala, umbrella ekak aran yamu.",
+    "expected": "අපි February වල Kandy trip එකක් යන්න හිතුua. train tickets online book කරන්න ඕනේ, budget එක Rs. 8000 වගේ. ඔයා එනවනම්, morning 5.45 AM Colombo Fort station එකේ meet වෙන්න. weather එක බලලා, umbrella එකක් අරන් යමු.",
+    "coverage": [
+      "Names / places / common English words",
+      "Future tense",
+      "L (≥300 characters)",
+      "Robustness validation"
+    ],
+    "notes": "Places and time formats preserved (best-effort)."
+  },
+  {
+    "id": "Pos_UI_0001",
+    "name": "Real-time output updates while typing",
+    "len_type": "S",
+    "input": "mama campus enawa",
+    "expected": "මම campus එනවා",
+    "coverage": [
+      "Daily language usage",
+      "Simple sentence",
+      "S (≤30 characters)",
+      "Real-time output update behavior"
+    ],
+    "notes": "Output should update automatically without convert button."
+  },
+  {
+    "id": "Neg_UI_0002",
+    "name": "Clear input should clear output (if not, UI issue)",
+    "len_type": "S",
+    "input": "",
+    "expected": "",
+    "coverage": [
+      "Empty/cleared input handling",
+      "Simple sentence",
+      "S (≤30 characters)",
+      "Error handling / input validation"
+    ],
+    "notes": "After clearing input, output should become empty."
+  },
+  {
+    "id": "Neg_Fun_0001",
+    "name": "Joined words may cause incorrect segmentation",
+    "len_type": "S",
+    "input": "mamagedharainnee",
+    "expected": "මම ගෙදර ඉන්නේ",
+    "coverage": [
+      "Typographical error handling",
+      "Simple sentence",
+      "S (≤30 characters)",
+      "Robustness validation"
+    ],
+    "notes": "System may not split joined words correctly."
+  },
+  {
+    "id": "Neg_Fun_0002",
+    "name": "Heavy typos in vowels may distort output",
+    "len_type": "S",
+    "input": "mta nidhimathy",
+    "expected": "මට නිදිමතයි",
+    "coverage": [
+      "Typographical error handling",
+      "Simple sentence",
+      "S (≤30 characters)",
+      "Robustness validation"
+    ],
+    "notes": "Missing vowels may create wrong Sinhala."
+  },
+  {
+    "id": "Neg_Fun_0003",
+    "name": "Ambiguous consonant clusters may convert wrong",
+    "len_type": "M",
+    "input": "mama gihin ennm, oyath enna.",
+    "expected": "මම ගිහින් එන්නම්, ඔයත් එන්න.",
+    "coverage": [
+      "Daily language usage",
+      "Compound sentence",
+      "M (31–299 characters)",
+      "Robustness validation"
+    ],
+    "notes": "Shorthand 'ennm' may produce incorrect output."
+  },
+  {
+    "id": "Neg_Fun_0004",
+    "name": "Mixed punctuation and symbols may break conversion",
+    "len_type": "M",
+    "input": "api yamu!!! :) #campus",
+    "expected": "අපි යමු!!! :) #campus",
+    "coverage": [
+      "Punctuation / numbers",
+      "Imperative (command)",
+      "M (31–299 characters)",
+      "Robustness validation"
+    ],
+    "notes": "Emoji/hashtags may affect output."
+  },
+  {
+    "id": "Neg_Fun_0005",
+    "name": "Multiple spaces + inconsistent casing may degrade output",
+    "len_type": "M",
+    "input": "KaRuNaAkArA  mata  PODI  udavvak  karanna  puluvanda?",
+    "expected": "කරුණාකර  මට  පොඩි  උදව්වක්  කරන්න  පුළුවන්ද?",
+    "coverage": [
+      "Formatting (spaces / line breaks / paragraph)",
+      "Interrogative (question)",
+      "M (31–299 characters)",
+      "Robustness validation"
+    ],
+    "notes": "Random casing may lead to incorrect transliteration."
+  },
+  {
+    "id": "Neg_Fun_0006",
+    "name": "Very long input with repeated segments may cause partial failure",
+    "len_type": "L",
+    "input": "mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa. mama dan weda karanawa.",
+    "expected": "මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා. මම දැන් වැඩ කරනවා.",
+    "coverage": [
+      "Formatting (spaces / line breaks / paragraph)",
+      "Present tense",
+      "L (≥300 characters)",
+      "Robustness validation"
+    ],
+    "notes": "System may lag or produce partial/incorrect conversion on long repeated input."
+  },
+  {
+    "id": "Neg_Fun_0007",
+    "name": "Numbers glued to words may convert incorrectly",
+    "len_type": "M",
+    "input": "mama 2kata yanna oonee, 3ta passe ennam.",
+    "expected": "මම 2කට යන්න ඕනේ, 3ට පස්සේ එන්නම්.",
+    "coverage": [
+      "Punctuation / numbers",
+      "Future tense",
+      "M (31–299 characters)",
+      "Robustness validation"
+    ],
+    "notes": "Time-like numbers attached to words can be tricky."
+  },
+  {
+    "id": "Neg_Fun_0008",
+    "name": "Uncommon proper noun should remain but may be altered",
+    "len_type": "M",
+    "input": "api NuwaraEliya yamu, AirBnB ekak book karamu.",
+    "expected": "අපි NuwaraEliya යමු, AirBnB එකක් book කරමු.",
+    "coverage": [
+      "Names / places / common English words",
+      "Future tense",
+      "M (31–299 characters)",
+      "Robustness validation"
+    ],
+    "notes": "CamelCase names may get broken."
+  },
+  {
+    "id": "Neg_Fun_0009",
+    "name": "Abbreviation chain may be corrupted",
+    "len_type": "M",
+    "input": "FYI, mage NIC eka scan karala email ekata attach karanna.",
+    "expected": "FYI, මගේ NIC එක scan කරලා email එකට attach කරන්න.",
+    "coverage": [
+      "Mixed Singlish + English",
+      "Imperative (command)",
+      "M (31–299 characters)",
+      "Robustness validation"
+    ],
+    "notes": "Some engines distort abbreviations."
+  },
+  {
+    "id": "Neg_Fun_0010",
+    "name": "Colloquial spelling variants may output wrong Sinhala",
+    "len_type": "M",
+    "input": "adoo api adha yanneda? hariyatama mata bayai.",
+    "expected": "අඩෝ අපි අද යන්නේද? හරියටම මට බයයි.",
+    "coverage": [
+      "Slang / informal language",
+      "Interrogative (question)",
+      "M (31–299 characters)",
+      "Robustness validation"
+    ],
+    "notes": "Colloquial spellings may not map well."
+  }
+]

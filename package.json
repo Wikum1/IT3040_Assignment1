@@ -1,0 +1,14 @@
+{
+  "name": "itpm-assignment1-swifttranslator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:excel": "node scripts/run-and-export.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "exceljs": "^4.4.0"
+  }
+}
