@@ -20,7 +20,7 @@ npm run test:excel
 
 Outputs:
 - `out/results.json` (raw run results)
-- `out/IT28XXXXX_TestCases_Executed.xlsx` (filled template with Actual Output + Status)
+- `out/IT23650220_TestCases_Executed.xlsx` (filled template with Actual Output + Status)
 
 ## Notes
 - The test script **does not fail the whole run** when a scenario fails. Instead, it records Pass/Fail per test case in the exported Excel (matches assignment requirement).
